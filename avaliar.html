@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Roteiro de Negociação — João Victor</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: Arial, sans-serif; background: #f4f4f4; color: #222; padding: 20px; }
+h1 { font-size: 20px; font-weight: 700; color: #1A56A0; margin-bottom: 4px; }
+.sub { font-size: 13px; color: #666; margin-bottom: 24px; }
+.section { margin-bottom: 28px; }
+.section-title { font-size: 12px; font-weight: 700; color: #888; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 10px; }
+.card { background: #fff; border-radius: 10px; border: 1px solid #e0e0e0; padding: 16px; }
+.item { padding: 10px 0; border-bottom: 1px solid #f0f0f0; }
+.item:last-child { border-bottom: none; }
+.item-title { font-weight: 700; font-size: 14px; color: #111; margin-bottom: 4px; display: flex; align-items: flex-start; gap: 8px; flex-wrap: wrap; }
+.item-body { font-size: 13px; color: #555; line-height: 1.6; margin-left: 28px; }
+.item-tip { font-size: 12px; color: #999; font-style: italic; margin-top: 4px; margin-left: 28px; }
+.num { display: inline-flex; align-items: center; justify-content: center; width: 20px; height: 20px; border-radius: 50%; font-size: 11px; font-weight: 700; flex-shrink: 0; margin-top: 2px; }
+.num.green { background: #EAF3DE; color: #3B6D11; }
+.num.red { background: #FCEBEB; color: #A32D2D; }
+.badge { display: inline-block; font-size: 11px; font-weight: 700; padding: 2px 8px; border-radius: 20px; }
+.badge-green { background: #EAF3DE; color: #3B6D11; }
+.badge-amber { background: #FFF3CD; color: #856404; }
+.badge-red { background: #FCEBEB; color: #A32D2D; }
+.badge-gray { background: #f0f0f0; color: #666; }
+.row2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.calc-area { background: #f8f9fa; border-radius: 10px; padding: 16px; border: 1px solid #e0e0e0; }
+.calc-row { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; }
+.calc-lbl { font-size: 13px; color: #555; flex: 1; }
+.calc-input { width: 130px; padding: 7px 10px; border: 1px solid #ccc; border-radius: 6px; font-size: 13px; text-align: right; }
+.calc-result { margin-top: 14px; padding-top: 14px; border-top: 1px solid #ddd; }
+.res-line { display: flex; justify-content: space-between; font-size: 13px; padding: 4px 0; }
+.res-line span:first-child { color: #666; }
+.res-line span:last-child { font-weight: 600; }
+.res-total { display: flex; justify-content: space-between; font-size: 16px; font-weight: 700; padding: 10px 0 0; border-top: 2px solid #ccc; margin-top: 6px; }
+.verdict { margin-top: 10px; font-size: 13px; font-weight: 700; padding: 10px 14px; border-radius: 8px; }
+.alert-item { font-size: 13px; padding: 6px 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 8px; align-items: flex-start; }
+.alert-item:last-child { border-bottom: none; }
+.dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; margin-top: 5px; }
+.dot-red { background: #E24B4A; }
+.dot-amber { background: #BA7517; }
+@media (max-width: 600px) { .row2 { grid-template-columns: 1fr; } .calc-row { flex-direction: column; align-items: flex-start; } .calc-input { width: 100%; } }
+</style>
+</head>
+<body>
+
+<h1>Roteiro de Negociação — Vaga Camil/Mateus</h1>
+<div class="sub">João Victor Barros da Silva · Representante Comercial · Parnaíba–PI</div>
+
+<!-- PERGUNTAS QUE DEVE FAZER -->
+<div class="section">
+  <div class="section-title">Perguntas que você DEVE fazer</div>
+  <div class="card">
+
+    <div class="item">
+      <div class="item-title"><span class="num green">1</span> "Qual o volume médio de vendas mensal desta rota hoje?" <span class="badge badge-green">essencial</span></div>
+      <div class="item-body">É o número mais importante. Com ele você calcula sua comissão bruta. Rota boa em Parnaíba e região deve estar acima de R$ 100k/mês.</div>
+      <div class="item-tip">Se hesitar ou não souber responder — sinal de alerta. Rota nova ou problemática.</div>
+    </div>
+
+    <div class="item">
+      <div class="item-title"><span class="num green">2</span> "Qual o percentual de comissão sobre as vendas?" <span class="badge badge-green">essencial</span></div>
+      <div class="item-body">Pergunte se incide sobre o valor bruto da nota fiscal ou sobre o líquido. Por lei deve ser sobre o bruto — mas muitas empresas praticam o líquido e reduzem seu ganho.</div>
+      <div class="item-tip">Abaixo de 3% com rota fraca = inviável com veículo próprio.</div>
+    </div>
+
+    <div class="item">
+      <div class="item-title"><span class="num green">3</span> "Terei exclusividade de território em Parnaíba e região?" <span class="badge badge-green">essencial</span></div>
+      <div class="item-body">Sem exclusividade, a empresa pode vender na sua área sem te pagar. Com exclusividade, você recebe comissão de toda venda no território — mesmo sem ter feito.</div>
+      <div class="item-tip">Exija que a exclusividade esteja no contrato por escrito.</div>
+    </div>
+
+    <div class="item">
+      <div class="item-title"><span class="num green">4</span> "Há ajuda de custo para combustível? Qual o valor?" <span class="badge badge-amber">importante</span></div>
+      <div class="item-body">Não é obrigatório por lei, mas muitos distribuidores pagam entre R$ 300 e R$ 800/mês. Mesmo pequeno, já cobre parte do combustível nos primeiros meses.</div>
+      <div class="item-tip">Se não oferecerem, negocie — especialmente nos primeiros 3 meses.</div>
+    </div>
+
+    <div class="item">
+      <div class="item-title"><span class="num green">5</span> "A carteira de clientes já existe ou preciso montar do zero?" <span class="badge badge-amber">importante</span></div>
+      <div class="item-body">Carteira herdada = faturamento desde o 1º mês. Rota do zero = 3 a 6 meses construindo sem faturamento consistente. Muda completamente a viabilidade inicial.</div>
+    </div>
+
+    <div class="item">
+      <div class="item-title"><span class="num green">6</span> "Quanto o representante anterior faturava por mês?" <span class="badge badge-amber">importante</span></div>
+      <div class="item-body">Esse número é o teto realista da rota. Se não quiserem responder, pergunte: "a rota está ativa ou precisa ser reestruturada?"</div>
+      <div class="item-tip">Se saiu o representante anterior — pergunte por quê de forma indireta.</div>
+    </div>
+
+    <div class="item">
+      <div class="item-title"><span class="num green">7</span> "Como funciona o prazo de pagamento das comissões?" <span class="badge badge-gray">necessária</span></div>
+      <div class="item-body">Comissão paga mensalmente é o padrão. Mas alguns distribuidores só pagam após o cliente quitar — podendo atrasar seu recebimento em 30 a 60 dias.</div>
+    </div>
+
+    <div class="item">
+      <div class="item-title"><span class="num green">8</span> "Há cláusula de rescisão sem justa causa no contrato?" <span class="badge badge-gray">necessária</span></div>
+      <div class="item-body">A Lei 4.886/65 garante indenização de 1/12 do total recebido em caso de rescisão sem justa causa. O prazo de aviso prévio deve estar no contrato por escrito.</div>
+    </div>
+
+  </div>
+</div>
+
+<!-- PERGUNTAS QUE NÃO DEVE FAZER -->
+<div class="section">
+  <div class="section-title">Perguntas que você NÃO deve fazer</div>
+  <div class="card">
+
+    <div class="item">
+      <div class="item-title"><span class="num red">✕</span> "Quanto eu vou ganhar por mês?" <span class="badge badge-red">evitar</span></div>
+      <div class="item-body">Parece ingênuo e mostra que você não entende o modelo de comissão. Substitua pelas perguntas 1 e 2 — você chega no mesmo resultado com mais profissionalismo.</div>
+    </div>
+
+    <div class="item">
+      <div class="item-title"><span class="num red">✕</span> "Quais são os benefícios?" (sem contexto) <span class="badge badge-red">evitar</span></div>
+      <div class="item-body">Via CORE não há benefícios CLT. Perguntar isso mostra que você não entende o vínculo jurídico. Pergunte específico: "há ajuda de custo ou suporte de material?"</div>
+    </div>
+
+    <div class="item">
+      <div class="item-title"><span class="num red">✕</span> "Posso ter horário flexível?" <span class="badge badge-red">evitar</span></div>
+      <div class="item-body">Como autônomo você já tem essa autonomia. Perguntar isso no primeiro contato passa imagem de que você não está comprometido com resultados.</div>
+    </div>
+
+    <div class="item">
+      <div class="item-title"><span class="num red">✕</span> "Por que o representante anterior saiu?" (direto) <span class="badge badge-amber">cuidado</span></div>
+      <div class="item-body">Pergunta importante, mas direta demais gera defensividade. Use: "a rota está estruturada ou há oportunidade de crescimento?"</div>
+    </div>
+
+    <div class="item">
+      <div class="item-title"><span class="num red">✕</span> "Vocês pagam antes do cliente pagar?" <span class="badge badge-red">evitar</span></div>
+      <div class="item-body">Parece que você está preocupado com caixa antes mesmo de começar. Pergunte neutro: "qual é o ciclo de pagamento das comissões?"</div>
+    </div>
+
+  </div>
+</div>
+
+<!-- CALCULADORA -->
+<div class="section">
+  <div class="section-title">Calculadora — anote e calcule na hora</div>
+  <div class="calc-area">
+    <div style="font-size:13px; color:#666; margin-bottom:14px;">Preencha com o que o Rodrigo te responder:</div>
+
+    <div class="calc-row">
+      <span class="calc-lbl">Volume da rota/mês (R$)</span>
+      <input class="calc-input" type="number" id="c-vol" value="" placeholder="ex: 150000">
+    </div>
+    <div class="calc-row">
+      <span class="calc-lbl">Percentual de comissão (%)</span>
+      <input class="calc-input" type="number" id="c-pct" value="" step="0.5" placeholder="ex: 3">
+    </div>
+    <div class="calc-row">
+      <span class="calc-lbl">Ajuda de custo (R$)</span>
+      <input class="calc-input" type="number" id="c-ajuda" value="" placeholder="ex: 400">
+    </div>
+    <div class="calc-row">
+      <span class="calc-lbl">Seus custos mensais estimados (R$)</span>
+      <input class="calc-input" type="number" id="c-custo" value="4100" placeholder="ex: 4100">
+    </div>
+
+    <div class="calc-result">
+      <div class="res-line"><span>Comissão bruta</span><span id="cc-bruto" style="color:#185FA5;">R$ 0</span></div>
+      <div class="res-line"><span>(+) Ajuda de custo</span><span id="cc-ajuda" style="color:#3B6D11;">R$ 0</span></div>
+      <div class="res-line"><span>(-) Seus custos totais</span><span id="cc-custo-out" style="color:#A32D2D;">- R$ 4.100</span></div>
+      <div class="res-total">
+        <span>Sobra real no bolso</span>
+        <span id="cc-sobra" style="color:#888;">R$ 0</span>
+      </div>
+      <div class="verdict" id="cc-verdict" style="background:#f0f0f0; color:#888;">Preencha os campos acima</div>
+    </div>
+  </div>
+</div>
+
+<!-- ANOTAÇÕES -->
+<div class="section">
+  <div class="section-title">Anotações obrigatórias durante a conversa</div>
+  <div class="row2">
+    <div class="card">
+      <div style="font-size:13px; font-weight:700; color:#111; margin-bottom:10px;">Anote exatamente</div>
+      <div class="alert-item"><span style="color:#555;">Volume mensal da rota:</span> <strong>R$ ______</strong></div>
+      <div class="alert-item"><span style="color:#555;">% de comissão:</span> <strong>______%</strong></div>
+      <div class="alert-item"><span style="color:#555;">Base de cálculo:</span> <strong>bruto / líquido da NF?</strong></div>
+      <div class="alert-item"><span style="color:#555;">Ajuda de custo:</span> <strong>R$ ______/mês</strong></div>
+      <div class="alert-item"><span style="color:#555;">Exclusividade de território:</span> <strong>sim / não</strong></div>
+      <div class="alert-item"><span style="color:#555;">Carteira já existe:</span> <strong>sim / não / parcial</strong></div>
+      <div class="alert-item"><span style="color:#555;">Prazo pagamento comissão:</span> <strong>___ dias</strong></div>
+    </div>
+    <div class="card">
+      <div style="font-size:13px; font-weight:700; color:#111; margin-bottom:10px;">Sinais de alerta</div>
+      <div class="alert-item"><span class="dot dot-red"></span><span style="color:#A32D2D;">Não sabe o volume da rota</span></div>
+      <div class="alert-item"><span class="dot dot-red"></span><span style="color:#A32D2D;">Comissão sobre o líquido da NF</span></div>
+      <div class="alert-item"><span class="dot dot-red"></span><span style="color:#A32D2D;">Sem exclusividade de território</span></div>
+      <div class="alert-item"><span class="dot dot-red"></span><span style="color:#A32D2D;">Rota do zero, sem carteira</span></div>
+      <div class="alert-item"><span class="dot dot-amber"></span><span style="color:#BA7517;">Sem ajuda de custo nenhuma</span></div>
+      <div class="alert-item"><span class="dot dot-amber"></span><span style="color:#BA7517;">Comissão só paga após cliente pagar</span></div>
+      <div class="alert-item"><span class="dot dot-amber"></span><span style="color:#BA7517;">Pressão para assinar rápido sem contrato</span></div>
+    </div>
+  </div>
+</div>
+
+<script>
+function fmtN(v) {
+  return 'R$ ' + Math.abs(v).toLocaleString('pt-BR', {minimumFractionDigits:0, maximumFractionDigits:0});
+}
+function calcular() {
+  var vol = parseFloat(document.getElementById('c-vol').value) || 0;
+  var pct = parseFloat(document.getElementById('c-pct').value) || 0;
+  var ajuda = parseFloat(document.getElementById('c-ajuda').value) || 0;
+  var custo = parseFloat(document.getElementById('c-custo').value) || 0;
+  var bruto = vol * pct / 100;
+  var sobra = bruto + ajuda - custo;
+
+  document.getElementById('cc-bruto').textContent = fmtN(bruto);
+  document.getElementById('cc-ajuda').textContent = fmtN(ajuda);
+  document.getElementById('cc-custo-out').textContent = '- ' + fmtN(custo);
+
+  var sobraEl = document.getElementById('cc-sobra');
+  var verd = document.getElementById('cc-verdict');
+
+  if (vol === 0 && pct === 0) {
+    sobraEl.textContent = 'R$ 0'; sobraEl.style.color = '#888';
+    verd.style.background = '#f0f0f0'; verd.style.color = '#888';
+    verd.textContent = 'Preencha os campos acima com os dados da conversa';
+    return;
+  }
+  if (sobra >= 2000) {
+    sobraEl.style.color = '#3B6D11'; sobraEl.textContent = fmtN(sobra);
+    verd.style.background = '#EAF3DE'; verd.style.color = '#3B6D11';
+    verd.textContent = 'Vale a pena — boa margem, pode assinar';
+  } else if (sobra >= 800) {
+    sobraEl.style.color = '#856404'; sobraEl.textContent = fmtN(sobra);
+    verd.style.background = '#FFF3CD'; verd.style.color = '#856404';
+    verd.textContent = 'No limite — negocie ajuda de custo ou % maior antes de assinar';
+  } else if (sobra >= 0) {
+    sobraEl.style.color = '#856404'; sobraEl.textContent = fmtN(sobra);
+    verd.style.background = '#FFF3CD'; verd.style.color = '#856404';
+    verd.textContent = '⚠ Risco alto — qualquer imprevisto e você fica no negativo';
+  } else {
+    sobraEl.style.color = '#A32D2D'; sobraEl.textContent = '- ' + fmtN(Math.abs(sobra));
+    verd.style.background = '#FCEBEB'; verd.style.color = '#A32D2D';
+    verd.textContent = 'Não vale — você trabalharia no prejuízo. Não assine assim.';
+  }
+}
+['c-vol','c-pct','c-ajuda','c-custo'].forEach(function(id){
+  document.getElementById(id).addEventListener('input', calcular);
+});
+calcular();
+</script>
+</body>
+</html>
